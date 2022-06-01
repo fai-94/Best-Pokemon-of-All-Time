@@ -1,0 +1,28 @@
+{
+    "data": {
+      "getPokemon": [
+        {
+            "num": 149,
+            "species": "dragonite",
+            "baseStats": {
+            "attack": 134,
+            "defense": 95
+            },
+            "sprite": "https://play.pokemonshowdown.com/sprites/ani/dragonite.gif",
+            "smogonPage": "https://www.smogon.com/dex/ss/pokemon/dragonite",
+            "serebiiPage": "https://www.serebii.net/pokedex-swsh/dragonite"
+        },
+        {
+            "num": 025,
+            "species": "pikachu",
+            "baseStats": {
+            "attack": 112,
+            "defense": 96
+            },
+            "sprite": "https://www.smogon.com/dex/media/sprites/xy/pikachu.gif",
+            "smogonPage": "https://www.smogon.com/dex/ss/pokemon/pikachu/",
+            "serebiiPage": "https://www.serebii.net/pokemongo/pokemon/025.shtml#general" 
+        }
+      ]
+    }
+}
