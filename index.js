@@ -1,10 +1,13 @@
 baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
 
 fetch(`${baseUrl}`)
-    .then(resp => resp.json())
-    .then(arr => arr.forEach(data => renderPokemon))
+    .then(response => response.json())
+    .then(data => {
+        renderPokemon(data[0])
+        renderPokemonLists(data)
+    })
 
-function renderPokemon(data) {
-  const pokemonSelection = document.getElementById('pokemon-bar')
-    pokemonSelection = 
-}
+// function renderPokemon(data) {
+//   const pokemonSelection = document.getElementById('')
+//     // pokemonSelection = 
+// }
