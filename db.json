@@ -1351,24 +1351,6 @@
       "id": 151
     },
     {
-      "name": "actual something",
-      "hp": null,
-      "sprites": {
-        "front": " ok",
-        "back": "yeah"
-      },
-      "id": 152
-    },
-    {
-      "name": "some",
-      "hp": null,
-      "sprites": {
-        "front": "pokemon",
-        "back": "data"
-      },
-      "id": 153
-    },
-    {
       "name": "bulbasaur",
       "hp": 49,
       "sprites": {
