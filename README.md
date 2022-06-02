@@ -1,5 +1,6 @@
 # Best-Pokemon-of-All-Time
 
+
 Choose your favorite and least favorite Pokemon with my teams interactive webpage!
 
 ## Setup
