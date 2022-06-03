@@ -14,7 +14,10 @@ function renderPokemon(pokemon) {
     const pokemonHp = document.getElementById('pokemon-hp')
         pokemonHp.textContent = `${pokemon.hp} HP`
     const pokemonImage = document.getElementById('pokemon-image')
-         pokemonImage.src = pokemon.sprites.front  
+         pokemonImage.src = pokemon.sprites.front 
+    const pokemonVotes = document.getElementById('total-votes') 
+    pokemonVotes.textContent = 0
+
          //store the votes here 
          pokemonImage.setAttribute('votes', 0)
 }   
