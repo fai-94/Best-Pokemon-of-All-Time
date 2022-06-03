@@ -10,11 +10,13 @@ fetch(`${baseUrl}`)
     //get first Pokemon details
 function renderPokemon(pokemon) {
     const pokemonName = document.getElementById('pokemon-name')
-        pokemonName.textContent = pokemon.name
+        pokemonName.textContent = pokemon.name.toUpperCase()
     const pokemonHp = document.getElementById('pokemon-hp')
-        pokemonHp.textContent = pokemon.hp
+        pokemonHp.textContent = `${pokemon.hp} HP`
     const pokemonImage = document.getElementById('pokemon-image')
-         pokemonImage.src = pokemon.sprites.front        
+         pokemonImage.src = pokemon.sprites.front  
+         //store the votes here 
+         pokemonImage.setAttribute('votes', 0)
 }   
 
 function renderPokemonLists(pokemon) {
@@ -29,3 +31,10 @@ function renderPokemonLists(pokemon) {
     } 
     )
 }
+
+const likeBtn = document.querySelector('#like-button')
+    likeBtn.addEventListener('click', () => totalVotes.textContent = parseInt(totalVotes.textContent)+3)
+const dislikeBtn = document.querySelector('#dislike-button')
+    dislikeBtn.addEventListener('click', () => totalVotes.textContent = parseInt(totalVotes.textContent)-2)
+    let totalVotes = document.getElementById('total-votes')
+
